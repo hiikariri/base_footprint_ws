@@ -10,8 +10,6 @@ FramesBroadcaster::FramesBroadcaster() : Node("frames_broadcaster_node")
 void FramesBroadcaster::getPose(Frame* frame)
 {
   // TO DO: Get the current position and orientation of the frame
-  // from your sensors or state information.
-  // Replace the following placeholder values with actual data.
   frame->x = 1.0;
   frame->y = 0.0;
   frame->z = 0.0;
