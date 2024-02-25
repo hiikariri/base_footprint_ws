@@ -1,0 +1,3 @@
+[submodule "src/humanoid_base_footprint"]
+	path = src/humanoid_base_footprint
+	url = https://github.com/ros-sports/humanoid_base_footprint.git
