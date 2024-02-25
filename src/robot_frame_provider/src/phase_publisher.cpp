@@ -11,8 +11,8 @@ void PhasePublisher::publishMessage()
 {
   auto message = biped_interfaces::msg::Phase();
 
-  message.header.stamp = now();
-  message.phase = biped_interfaces::msg::Phase::LEFT_STANCE; // TODO: Make algorithm to determine the actual phase
+  message.header.stamp = this_>get_clock()->now();
+  message.phase = biped_interfaces::msg::Phase::RIGHT_STANCE; // TODO: Make algorithm to determine the actual phase
 
   publisher_->publish(message);
 }
