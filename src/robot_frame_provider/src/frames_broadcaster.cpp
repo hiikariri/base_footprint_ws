@@ -40,7 +40,7 @@ void FramesBroadcaster::broadcastTransform(const std::string& parent, const std:
 {
   geometry_msgs::msg::TransformStamped transform;
   
-  transform.header.stamp = now();
+  transform.header.stamp = this->get_clock()->now();
   transform.header.frame_id = parent;
   transform.child_frame_id = child;
   transform.transform.translation.x = x;
