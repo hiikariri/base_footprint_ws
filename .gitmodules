@@ -1,3 +1,9 @@
 [submodule "src/humanoid_base_footprint"]
 	path = src/humanoid_base_footprint
 	url = https://github.com/ros-sports/humanoid_base_footprint.git
+[submodule "src/biped_interfaces"]
+	path = src/biped_interfaces
+	url = https://github.com/ros-sports/biped_interfaces.git
+[submodule "src/rot_conv_lib"]
+	path = src/rot_conv_lib
+	url = https://github.com/bit-bots/rot_conv_lib.git
