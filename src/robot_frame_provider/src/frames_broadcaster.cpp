@@ -21,10 +21,10 @@ void FramesBroadcaster::getPose(Frame* frame)
 void FramesBroadcaster::broadcastTransforms()
 {
   std::vector<Frame> frames = {
-    {"world", "base_link", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+    {"odom", "base_link", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
     {"base_link", "r_sole", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
     {"base_link", "l_sole", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
-    {"world", "odom", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
+    {"map", "odom", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}
   };
 
   for (Frame& frame : frames) {
